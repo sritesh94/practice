@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Georgia-font;
+    src: url(Georgia.ttf);
+}
+body{
+    font-family: Georgia-font;
+    scroll-behavior: smooth;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* Section 1 Starts here */
+
+.navbar{
+    background-color: #290503;
+}
+.header{
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+    padding: 25px 10px;
+    align-items: center;
+}
+
+.hamburger{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+}
+.hamburger i{
+    color: #fff;
+    padding: 10px;
+    background-color: rgb(117, 65, 65);
+    border-radius: 0.2em;
+}
+ .menus ul{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: 1em;
+}
+.menus ul li a{
+    color: white;
+    font-size: 0.813rem;
+    text-transform: uppercase;
+}
+.active-menu{
+    background-color: #76c38f;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 0.7em;
+}
+.heading p{
+    font-size: 1.75rem;
+} 
+.heading-span{
+    font-size: 0.688rem;
+}
+
+/* Section 2 starts here */
+
+
+.hero-section{
+    background-color: #290503;
+    color: white;
+    position: relative
+
+}
+.hero-section-container{
+    width: 960px;
+    margin: 0 auto;
+    padding: 30px 10px;
+}
+ .arrows .arrow-right-div, .arrows .arrow-left-div{
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.arrow-left-div{
+    left: 21%;
+}
+.arrow-right-div{
+    right: 21%;
+}
+#owl-section{
+    position: relative;
+}
+#owl-section .item img{
+    display: block;
+    width: 100%;
+}
+.contents{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 20;
+    top: 35px;
+    left: 30%;   
+    width: 840px;
+    margin: 0 auto; 
+}
+.contents-image img{
+    width: 60%;
+}
+.contents-text p{
+    font-size: 0.75rem;
+    line-height: 1.6;
+}
+.btn-a{
+    margin-top: 10px;
+}
+.btn-a a{
+    font-size: 0.813rem;
+    color: #fff;
+    background-color: #76c38f;
+    padding: 8px;
+    border-radius: 7px;
+}
+
+
+/* Section 3 starts here  */
+
+.main-service-container{
+    background-color: #660000;
+}
+.service-container{
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.service-container .service-box{
+    width:24.5%;
+    background-color: #fff;
+    margin: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10px;
+    user-select: none;
+}
+.box{
+    background-color: #333333;
+    position: relative;
+    width: 50%;
+    padding-bottom: 50%;
+    margin: 10px auto;
+}
+ .box-para{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+.service-box h2{
+    font-size: 2rem;
+    color: #333333;
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.service-para{
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+.service-box:hover{
+    background-color: #76c38f;
+    cursor: pointer;
+    color: white;
+}
+.service-box:hover .box{
+    background-color: #fff;
+}
+.service-box:hover .box-para{
+    color: #333333;
+}
+.service-box:hover h2{
+    color: #fff;
+}
+
+/* Section 4 Starts here */
+
+.main-work-container{
+    background-color: #660000;
+}
+.work-container{
+    width: 960px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+}
+.products-container{
+    display: flex;
+}
+.products-main{
+    width:33%;
+    color:#fff;
+    background-color: #353535;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid #fff;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+.center-para{
+    padding: 25%;
+    text-align: center;
+}
+.bottom-para{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #151515;
+}
+.border-heading{
+    position: relative;
+}
+.border-heading h2{
+    color: #fff;
+    padding: 5px 2px;
+    background-color: #303030;
+    width: 25%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 10px ;
+}
+.border-heading .border-left{
+    position: absolute;
+    width: 37.5%;
+    top:50%;
+    border-color:#303030;
+}
+.border-heading .border-right{
+    position: absolute;
+    width: 37.5%;
+    left: 62.7%;
+    top: 50%;
+    border-color:#303030;
+
+}
+.products-main:hover .bottom-para{
+    display: none;
+}
+.products-main:hover{
+    border-color: #76c38f;
+}
+/* Section 5 footer starts here  */
+
+.footer{
+    
+    border-bottom: 3px solid #3a3a3a;
+    padding: 20px;
+    background-color: #303030;
+}
+.footer .rows{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    line-height: 1.6;
+}
+.footer-container{
+    width: 960px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 auto;
+}
+.footer .rows h3{
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 2em;
+}
+.row1 h4{
+    font-size: 0.813rem;
+    margin-bottom: 0.5em;
+}
+.greenText{
+    color: #76c38f;
+}
+#domain{
+    color: #666666;
+    font-size: 0.625rem;
+    margin-bottom: 0.5em;
+}
+#date{
+    color: #979797;
+    font-size: 0.625rem;
+    margin-bottom: 0.5em;
+}
+#main-para{
+    color: #979797;
+    font-size: 0.813rem;
+    line-height: 1.6;
+}
+#footer-link{
+    color: #76c38f;
+    font-size: 0.813rem;
+    margin-top: 00.5em;
+}
+.row2 ul li{
+    border-bottom: 1px solid #221f1f;
+    padding: 5px;
+}
+.row2 ul li a{
+    color: #76c38f;
+    font-size: 0.813rem;
+}
+.footer-tag{
+    color: #76c38e;
+}
+.row3 p{
+    color: #979797;
+    line-height: 1.6;
+    font-size: 0.813rem;
+}
+.row4 form{
+    display: flex;
+    flex-direction: column;
+}
+.submit{
+    width: 70px;
+    padding: 10px;
+    background-color: #76c38f;
+    outline: none;
+    border: none;
+    border-radius: 0.5em;
+}
+.submit a{
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 800;
+}
+.row4 form input,textarea{
+    background-color: #222222;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    margin: 4px;
+    width: 200px;
+}
+.row4 form input,textarea ::placeholder{
+    color: #989898;
+}
+
+/* Section 5 main back footer */
+
+.main-back-footer{
+    background-color: #2b2b2b;
+}
+.back-footer{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin-top: 0.03em;
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
