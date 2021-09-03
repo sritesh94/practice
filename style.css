@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: Georgia-font;
     src: url(Georgia.ttf);
@@ -77,8 +78,7 @@ a{
 .hero-section{
     background-color: #290503;
     color: white;
-    position: relative
-
+    position: relative;
 }
 .hero-section-container{
     width: 960px;
@@ -101,10 +101,7 @@ a{
 #owl-section{
     position: relative;
 }
-#owl-section .item img{
-    display: block;
-    width: 100%;
-}
+
 .contents{
     display: flex;
     justify-content: space-between;

@@ -1,5 +1,8 @@
-
+ 
 @media screen and (max-width:768px) {
+    html,body{
+        overflow-x: hidden;
+    }
    
     .arrow-left-div{
         left: 0;
@@ -12,13 +15,15 @@
     }
     .header{
         width: 100%;
-        margin: 0;
         position: relative;
+    }
+    .header .heading{
+        font-size: 1rem;
     }
     .hero-section-container{
         width: 100%;
-        margin: 0;    
-        padding: 0;
+        margin: 0 auto;    
+        position: relative;
     } 
   
     .hamburger{
@@ -67,10 +72,10 @@
     .products-container{
         display: flex;
         flex-direction: column;
-        max-width: 100%;
+        width: 100%;
     }
     .products-main{
-        width: 32%;
+        width: 30%;
     }
     .border-heading{
         margin: 0;
@@ -83,17 +88,24 @@
         display: none;
     }
     .footer-container{
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr;
     }
    .back-footer{
+       width: 100%;
        display: flex;
        flex-direction: column;
    }
    .row2 ul li{
        border: none;
    }   
-}
-@media screen and (max-width:768px){
-    
+} 
+@media screen and (max-width:280px){
+    .products-container{
+        width: 100%;
+    }
+    .products-container .products-main{
+        width: 25%;
+    }
 }
